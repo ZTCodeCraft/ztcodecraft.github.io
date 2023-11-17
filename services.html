@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Around | Services v.3</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Around - Multipurpose Bootstrap HTML Template">
+    <meta name="keywords" content="bootstrap, business, corporate, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, saas, multipurpose, product landing, shop, software, ui kit, web studio, landing, dark mode, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" color="#6366f1" href="assets/favicon/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="white">
+    <!-- Theme mode-->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== undefined && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+      
+      
+    </script>
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #121519;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #6f788b;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        background-color: #d7dde2; 
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        background-color: rgba(255,255,255,.25);
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1500);
+        };
+      })();
+      
+    </script>
+    <!-- Import Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
+    <!-- Vendor styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/zt-theme.css">
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    <!-- Page wrapper-->
+    <main class="page-wrapper">
+      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page-->
+      <header class="navbar navbar-expand-lg fixed-top bg-light">
+        <div class="container"><a class="navbar-brand pe-sm-3" href="index.html"><span class="text-primary flex-shrink-0 me-2">
+              <svg version="1.1" width="35" height="32" viewBox="0 0 36 33" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M35.6,29c-1.1,3.4-5.4,4.4-7.9,1.9c-2.3-2.2-6.1-3.7-9.4-3.7c-3.1,0-7.5,1.8-10,4.1c-2.2,2-5.8,1.5-7.3-1.1c-1-1.8-1.2-4.1,0-6.2l0.6-1.1l0,0c0.6-0.7,4.4-5.2,12.5-5.7c0.5,1.8,2,3.1,3.9,3.1c2.2,0,4.1-1.9,4.1-4.2s-1.8-4.2-4.1-4.2c-2,0-3.6,1.4-4,3.3H7.7c-0.8,0-1.3-0.9-0.9-1.6l5.6-9.8c2.5-4.5,8.8-4.5,11.3,0L35.1,24C36,25.7,36.1,27.5,35.6,29z"></path>
+              </svg></span>Around</a>
+          <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
+            <input class="form-check-input" type="checkbox" id="theme-mode">
+            <label class="form-check-label" for="theme-mode"><i class="ai-sun fs-lg"></i></label>
+            <label class="form-check-label" for="theme-mode"><i class="ai-moon fs-lg"></i></label>
+          </div>
+          <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+          <nav class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="contacts.html">Contact Us</a></li>
+            </ul>
+            <div class="d-sm-none p-3 mt-n3"></div>
+          </nav>
+        </div>
+      </header>
+      <!-- Page content-->
+      <!-- Hero-->
+      <section class="bg-secondary py-5">
+        <div class="container pt-5 pb-lg-2 pb-xl-4 py-xxl-5">
+            <!-- Breadcrumb-->
+            <nav aria-label="breadcrumb">
+              <ol class="pt-lg-3 pb-lg-4 pb-2 breadcrumb">
+                <li class="breadcrumb-item"><a href="zt-code-craft.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Services</li>
+              </ol>
+            </nav>
+          <!-- Page title-->
+
+          <h1 class="display-2 mb-4 text-center">Our services</h1>
+          <p class="text-center pb-4 mb-2 mb-lg-3">
+            ZT Code Craft is a creative studio specialising in<br>
+            website development and brand establishment,<br>
+            dedicated to help you grow your business.</p>
+          </div>
+        </div>
+      </section>
+      <!-- Services-->
+      <div class="container py-4">
+        <!-- Item-->
+        <section class="row align-items-center pb-5 py-xl-5 my-2" id="web-development">
+          <div class="col-md-6 offset-xl-1 order-md-2 pb-2 mb-4 mb-md-0"><img class="rounded-5" src="assets/img/services/web-2.png" alt="Image"></div>
+          <div class="col-md-6 col-xl-5 order-md-1">
+            <div class="pe-md-4 pe-xl-0 pb-4">
+              <h2 class="h1 pb-2 pb-lg-3">Web Development</h2>
+              <p class="pb-2 pb-lg-0 mb-4 mb-lg-5">
+                Let's create a site that's not just good-looking but also works like a charm, giving your brand the online spotlight it deserves.
+              </p>
+              <div class="row row-cols-2 mb-4">
+                <div class="col">
+                  <h3 class="h5 mb-2">Is it for me?</h3>
+                  <p class="fs-sm mb-0">Perfect for entrepreneurs and businesses seeking a standout online presence that captivates their audience and drives business growth.</p>
+                  <br>
+                  <h4 class="h5 mb-2">Price: <b class="text-price"> €250 </b></h4>
+                </div>
+                <div class="col">
+                  <h3 class="h5 mb-2">Included</h3>
+                  <p class="fs-sm mb-0">Stunning website design, user-friendly interface, and responsive functionality (functions well on any device—be it a computer, tablet, or phone). 
+                    What's more, enjoy the added benefits of unlimited hosting and a free SSL certificate, guaranteeing secure information exchange. 
+                    Experience fast load times that keep visitors engaged, backed by free technical support from our team to ensure a smooth and hassle-free online experience.
+                </p>
+                </div>
+              </div>
+              <a class="btn btn-primary" href="contacts.html">Let's work together</a>
+            </div>
+          </div>
+        </section>
+        <!-- Item-->
+        <section class="row align-items-center pb-5 py-xl-5 my-2" id="branding">
+          <div class="col-md-6 pb-2 mb-4 mb-md-0"><img class="rounded-5" src="assets/img/services/brand-2.png" alt="Image"></div>
+          <div class="col-md-6 col-xl-5 offset-xl-1">
+            <div class="ps-md-4 pe-xl-0">
+              <h2 class="h1 pb-2 pb-lg-3">Brand Establishment</h2>
+              <p class="pb-2 pb-lg-0 mb-4 mb-lg-5">
+                We're not just about logos and colors – we're here to craft an identity that stands out in the digital crowd. 
+                Let's tell your story, build a brand that speaks volumes, and leave a lasting impression on your audience.
+              </p>
+              <div class="row row-cols-2">
+                <div class="col">
+                  <h3 class="h5 mb-2">Is it for me?</h3>
+                  <p class="fs-sm mb-0">Tailored for businesses eager to craft a unique identity that resonates with their audience, leaving a lasting impression in the digital landscape.</p>
+                </div>
+                <div class="col">
+                  <h3 class="h5 mb-2">Included</h3>
+                  <p class="fs-sm mb-0">You get more than just a logo – we provide a comprehensive package that includes brand strategy, 
+                    custom visualizations, and a cohesive narrative, ensuring your brand speaks volumes to your target audience.
+                </p>
+                </div>
+              </div>
+              <a class="btn btn-primary" href="contacts.html">Let's work together</a>
+            </div>
+          </div>
+        </section>
+        <!-- Item-->
+        <section class="row align-items-center pb-5 py-xl-5 my-2" id="integrations">
+          <div class="col-md-6 offset-xl-1 order-md-2 pb-2 mb-4 mb-md-0"><img class="rounded-5" src="assets/img/services/integrations-2.png" alt="Image"></div>
+          <div class="col-md-6 col-xl-5 order-md-1">
+            <div class="pe-md-4 pe-xl-0">
+              <h2 class="h1 pb-2 pb-lg-3">Website Integrations</h2>
+              <p class="pb-2 pb-lg-0 mb-4 mb-lg-5">
+                Take your website to the next level. From client forms that effortlessly sync with your emails to integrating payment links, donation buttons and content management system, we bring the tech magic to your website. 
+                Let's turn your online space into a dynamic hub! Your dream website, now with superpowers!
+              </p>
+              <div class="row row-cols-2">
+                <div class="col">
+                  <h3 class="h5 mb-2">Is it for me?</h3>
+                  <p class="fs-sm mb-0">If you're looking to supercharge your website functionality, our Website Integrations service is perfect for businesses wanting seamless client interactions.</p>
+                </div>
+                <div class="col">
+                  <h3 class="h5 mb-2">Included</h3>
+                  <p class="fs-sm mb-0">
+                    Some examples of what we can do for you:
+                    <ul>
+                        <li>Contact forms</li>
+                        <li>Email integrations</li>
+                        <li>Dynamic content managed by you</li>
+                        <li>Payment links</li>
+                        <li>Any other dynamic feature</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+              <a class="btn btn-primary" href="contacts.html">Let's work together</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it works (Steps)-->
+      <section class="bg-secondary pt-2 mt-md-3 mt-lg-2 mt-xl-4 mt-xxl-3 pb-5">
+        <div class="container pt-2 pt-sm-4 pt-lg-5">
+          <h2 class="h1 text-center pb-3 mb-3 mb-lg-4">How does the process work?</h2>
+          <!-- Step-->
+          <div class="row align-items-center position-relative pb-5 pb-lg-0 mb-1 mb-sm-2 mb-md-4 mb-lg-0">
+            <div class="col-md-6 col-xl-5 offset-lg-1 order-md-2 pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md"></div>
+            <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+              <div class="pe-md-4 pe-lg-0"><span class="badge fs-sm bg-faded-primary text-primary mb-3 mb-lg-4">Step 01</span>
+                <h3 class="h2 mb-3 mb-lg-4">Book a Call and Define Your Vision</h3>
+                <p class="pb-1 pb-lg-0 mb-4 mb-lg-5">
+                  Kick off your journey by scheduling a call with us. We'll dive into your business needs, 
+                  discuss which services align with your goals, and agree on the specific requirements to bring your vision to life. 
+                  In this step of the process we will discuss timeframes, requirements, and pricing.
+                </p><a class="btn btn-outline-primary rounded-pill" href="/contacts.html">Book a call</a>
+              </div>
+            </div>
+          </div>
+          <!-- Arrow-->
+          <div class="d-none d-lg-flex justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-offset="250">
+            <svg class="d-block text-primary" width="339" height="365" viewBox="0 0 339 365" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: -150px; margin-top: -140px; margin-bottom: -108px;">
+              <path d="M324 291.371C120.111 291.37 240.756 58.7225 1.00032 73.2606" stroke="url(#arrow1)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"></path>
+              <path d="M337.375 290.62C338.074 290.998 338.074 292.001 337.375 292.379L328.476 297.196C327.81 297.557 327 297.074 327 296.317L327 286.683C327 285.925 327.81 285.443 328.476 285.803L337.375 290.62Z" fill="currentColor"></path>
+              <defs>
+                <linearGradient id="arrow1" x1="324" y1="291.5" x2="-2.99974" y2="72.4997" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="currentColor"></stop>
+                  <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <!-- Step-->
+          <div class="row align-items-center position-relative pb-5 pb-lg-0 mb-1 mb-sm-2 mb-md-4 mb-lg-0">
+            <div class="col-md-6 col-xl-5 offset-xl-1 pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md"></div>
+            <div class="col-md-6 col-lg-5 col-xl-4 offset-lg-1" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+              <div class="ps-md-4 ps-lg-0"><span class="badge fs-sm bg-faded-primary text-primary mb-3 mb-lg-4">Step 02</span>
+                <h3 class="h2 mb-3 mb-lg-4">Development Phase - Your Vision, Your Way</h3>
+                <p class="pb-1 pb-lg-0 mb-4 mb-lg-5">
+                  In the development phase, whether it's building a website or defining your brand, the control is in your hands. Feel free to engage as much as you prefer, or entrust everything to us – your time is precious. 
+                  Our aim is collaboration, guaranteeing that your project reflects your unique identity.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Arrow-->
+          <div class="d-none d-lg-flex justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-offset="250">
+            <svg class="d-block text-primary" width="263" height="275" viewBox="0 0 263 275" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top: -60px; margin-left: -120px; margin-bottom: -80px;">
+              <path d="M8.13678 249.647C7.47108 250.081 6.59001 249.602 6.59106 248.808L6.60444 238.689C6.60544 237.931 7.4158 237.45 8.08162 237.811L16.5478 242.408C17.2136 242.77 17.2512 243.712 16.6163 244.125L8.13678 249.647Z" fill="currentColor"></path>
+              <path d="M261.961 37.8891C216.908 65.6243 128.226 135.486 133.916 193.05C141.029 265.005 265.134 173.468 173.666 148.634C89.2542 125.715 30.9125 210.547 13.9796 236.702" stroke="url(#arrow2)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"></path>
+              <defs>
+                <linearGradient id="arrow2" x1="13.9797" y1="234.5" x2="276.704" y2="60.1939" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="currentColor"></stop>
+                  <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <!-- Step-->
+          <div class="row align-items-center position-relative">
+            <div class="col-md-6 col-xl-5 offset-lg-1 order-md-2 d-md-flex justify-content-end pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md"></div>
+            <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+              <div class="pe-md-4 pe-lg-0"><span class="badge fs-sm bg-faded-primary text-primary mb-3 mb-lg-4">Step 03</span>
+                <h3 class="h2 mb-3 mb-lg-4">Handover - Your Project, Your Success</h3>
+                <p class="pb-1 pb-lg-0 mb-4 mb-lg-5">
+                  The final step is the handover. Your fully developed website or established brand is now ready for its debut. 
+                  We pass the reins back to you, equipped with the tools for digital success.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ (Accordion)-->
+      <section class="py-5">
+        <div class="container py-lg-3 py-xl-5">
+          <div class="row pt-1 pb-2 py-sm-4">
+            <div class="col-md-4 text-center text-md-start">
+              <h2 class="h1">Any questions? Check out the FAQ</h2>
+              <p class="pb-3 pb-sm-4">Don't find what you are looking for here? Feel free to contact us.</p>
+              <div class="d-none d-md-flex justify-content-center">
+                <svg class="text-zt-pink ms-n4" width="200" height="211" viewBox="0 0 200 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z" fill="currentColor"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="col-md-8 col-lg-7 offset-lg-1">
+              <div class="accordion" id="faq">
+                <div class="accordion-item bg-light">
+                  <h3 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#questionOne" aria-expanded="true" aria-controls="questionOne">How much would a website cost?</button>
+                  </h3>
+                  <div class="accordion-collapse collapse show" id="questionOne" aria-labelledby="headingOne" data-bs-parent="#faq">
+                    <div class="accordion-body fs-sm">
+                      For a simple static website, the cost is 250 euros. 
+                      However, additional features like integrations or custom illustrations, may incur additional charges based on your specific requirements.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-light">
+                  <h3 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">Are There Any Extra Costs?</button>
+                  </h3>
+                  <div class="accordion-collapse collapse" id="questionTwo" aria-labelledby="headingTwo" data-bs-parent="#faq">
+                    <div class="accordion-body fs-sm">
+                      Typically, <b>no additional costs</b>! Unlike platforms such as WordPress, Wix, and other CRMs that often entail monthly fees, our commitment to a one-time payment structure ensures a cost-effective and transparent solution. 
+                      Moreover, we offer complimentary hosting for unlimited time and an SSL certificate, <b>eliminating the worry of ongoing expenses</b>. Your sole potential payment is for the domain of your choice.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-light">
+                  <h3 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionThree" aria-expanded="false" aria-controls="questionThree">How long does it take to complete a website?</button>
+                  </h3>
+                  <div class="accordion-collapse collapse" id="questionThree" aria-labelledby="headingTwo" data-bs-parent="#faq">
+                    <div class="accordion-body fs-sm">
+                      The timeline varies based on the complexity of the project. <b>For a simple website it could be about 10-15 days.</b>
+                      We'll provide you with an estimated timeframe during our initial consultation.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-light">
+                  <h3 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionFour" aria-expanded="false" aria-controls="questionFour">Can I update my website content after it's live?</button>
+                  </h3>
+                  <div class="accordion-collapse collapse" id="questionFour" aria-labelledby="headingThree" data-bs-parent="#faq">
+                    <div class="accordion-body fs-sm">
+                      Absolutely! If you prefer flexibility, you can <b>make content changes on a pay-as-you-go basis</b>. Simply pay for the changes you request.
+                      Alternatively, <b>we also offer Content Management Systems (CMS) integration</b>. This means you have the power to make frequent updates to specific sections of your website, 
+                      such as schedules or restaurant menus, without incurring additional charges. We provide training to ensure you can manage these updates confidently.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-light">
+                  <h3 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionFive" aria-expanded="false" aria-controls="questionFive">What happens if my website experiences technical issues?</button>
+                  </h3>
+                  <div class="accordion-collapse collapse" id="questionFive" aria-labelledby="headingFour" data-bs-parent="#faq">
+                    <div class="accordion-body fs-sm">
+                      In the unlikely event that your website encounters technical issues, rest assured we've got you covered. 
+                      Reach out to us, and <b>we'll promptly address and resolve any technical issues free of charge</b>. 
+                      At ZT Code Craft, your website is in good hands, and we guarantee the quality of our service.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-light">
+                  <h3 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#questionSix" aria-expanded="false" aria-controls="questionSix">Can you help with content creation and illustrations for the website?</button>
+                  </h3>
+                  <div class="accordion-collapse collapse" id="questionSix" aria-labelledby="headingFive" data-bs-parent="#faq">
+                    <div class="accordion-body fs-sm">
+                      Absolutely! As part of our comprehensive branding service, we offer assistance with content creation and illustrations to ensure your website not only looks fantastic but also tells a compelling and visually engaging story. 
+                      Let us bring your brand to life with captivating content and eye-catching visuals.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    </main>
+    <!-- Footer-->
+    <footer class="footer bg-dark position-relative py-4 py-md-5">
+      <div class="d-none d-dark-mode-block position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255,255,255, .02);"></div>
+      <div class="dark-mode container position-relative zindex-2 pt-4 pt-md-2 pt-xl-4 pt-xxl-5">
+        <div class="row py-md-3 mb-4 mb-md-5">
+          <div class="col-md-7 col-lg-6 col-xxl-5 mb-sm-4 mb-md-0">
+            <h2 class="display-4 mb-4 mb-md-5">Let's start building brand together</h2>
+            <div class="d-sm-flex align-items-center"><a class="btn btn-lg btn-primary me-sm-3 me-lg-4" href="#">Contact us</a>
+              <p class="fs-sm py-3 py-sm-0 ps-sm-2 mb-0">Managers will contact you to discuss the project and select the best team</p>
+            </div>
+          </div>
+          <div class="col-md-5 offset-lg-1 offset-xxl-2 d-flex flex-column">
+            <div class="nav mx-n2 mx-lg-n4 mb-2 mb-sm-3"><a class="nav-link text-primary px-2 px-lg-4" href="mailto:example@email.com">example@email.com</a><a class="nav-link px-3 px-lg-4" href="#">Privay policy</a></div>
+            <div class="nav flex-column mb-3 mb-sm-4"><a class="nav-link py-1 px-0" href="tel:+15262200444">+ 1 526 220 0444</a><a class="nav-link py-1 px-0" href="tel:+15262200000">+ 1 526 220 0000</a></div>
+            <div class="nav mx-n2 mt-auto"><a class="nav-link py-1 px-2 me-2" href="#">instagram</a><a class="nav-link py-1 px-2 me-2" href="#">behance</a><a class="nav-link py-1 px-2 me-2" href="#">medium</a><a class="nav-link py-1 px-2" href="#">dribbble</a></div>
+          </div>
+        </div>
+        <p class="fs-sm pt-3 pb-2 pb-lg-0 mb-0"><span class="opacity-70">&copy; All rights reserved. Made by </span><a class="nav-link d-inline fw-normal p-0" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a></p>
+      </div>
+    </footer>
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll>
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg><i class="ai-arrow-up"></i></a>
+    <!-- Vendor scripts: js libraries and plugins-->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Main theme script-->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+</html>
