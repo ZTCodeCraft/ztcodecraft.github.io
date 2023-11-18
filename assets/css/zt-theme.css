@@ -82,23 +82,23 @@
 }
 
 .zt-blue {
-  color: var(--zt-blue);
+  color: var(--zt-blue) !important;
 }
 
 .zt-light-blue {
-  color: var(--zt-light-blue);
+  color: var(--zt-light-blue) !important;
 }
 
 .zt-white {
-  color: var(--zt-white);
+  color: var(--zt-white) !important;
 }
 
 .zt-pink {
-  color: var(--zt-pink);
+  color: var(--zt-pink) !important;
 }
 
 .zt-light-pink {
-  color: var(--zt-light-pink);
+  color: var(--zt-light-pink) !important;
 }
 
 *,
@@ -8063,7 +8063,12 @@ textarea.form-control-lg {
 .text-price {
   font-size: 1.7rem !important;
   font-weight: 600 !important;
-  color: var(--ar-red);
+  color: var(--zt-pink);
+}
+
+.sub-text-services {
+  font-weight: 500 !important;
+  color: var(--zt-light-blue);
 }
 
 .text-primary {
