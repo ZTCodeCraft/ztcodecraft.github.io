@@ -10,13 +10,13 @@
     <!-- Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon and Touch Icons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <link rel="mask-icon" color="#6366f1" href="assets/favicon/safari-pinned-tab.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="mask-icon" color="#6366f1" href="../assets/favicon/safari-pinned-tab.svg">
     <meta name="msapplication-TileColor" content="#080032">
-    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="msapplication-config" content="../assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="white">
     <!-- Theme mode-->
     <script>
@@ -137,9 +137,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
     <!-- Vendor styles-->
-    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css"/>
     <!-- Main Theme Styles + Bootstrap-->
-    <link rel="stylesheet" media="screen" href="assets/css/zt-theme.css">
+    <link rel="stylesheet" media="screen" href="../assets/css/zt-theme.css">
   </head>
   <!-- Body-->
   <body>
@@ -152,12 +152,16 @@
     <!-- Page wrapper-->
     <main class="page-wrapper">
       <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page-->
-      <header class="navbar navbar-expand-lg fixed-top bg-light">
+      <header class="navbar navbar-expand-lg fixed-top">
         <div class="container"><a class="navbar-brand pe-sm-3" href="index.html"><span class="text-primary flex-shrink-0 me-2">
               <svg version="1.1" width="35" height="32" viewBox="0 0 36 33" xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" d="M35.6,29c-1.1,3.4-5.4,4.4-7.9,1.9c-2.3-2.2-6.1-3.7-9.4-3.7c-3.1,0-7.5,1.8-10,4.1c-2.2,2-5.8,1.5-7.3-1.1c-1-1.8-1.2-4.1,0-6.2l0.6-1.1l0,0c0.6-0.7,4.4-5.2,12.5-5.7c0.5,1.8,2,3.1,3.9,3.1c2.2,0,4.1-1.9,4.1-4.2s-1.8-4.2-4.1-4.2c-2,0-3.6,1.4-4,3.3H7.7c-0.8,0-1.3-0.9-0.9-1.6l5.6-9.8c2.5-4.5,8.8-4.5,11.3,0L35.1,24C36,25.7,36.1,27.5,35.6,29z"></path>
               </svg></span>Around</a>
-          <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
+              
+          <div class="nav-item ms-auto order-lg-2 "><a class="nav-link" href="#">BG | </a></div>
+          <div class="nav-item ms-auto order-lg-3 me-3 ms-sm-2"><a class="nav-link" href="../en/services.html"> EN</a></div>
+                    
+          <div class="form-check form-switch mode-switch order-lg-4 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
             <input class="form-check-input" type="checkbox" id="theme-mode">
             <label class="form-check-label" for="theme-mode"><i class="ai-sun fs-lg"></i></label>
             <label class="form-check-label" for="theme-mode"><i class="ai-moon fs-lg"></i></label>
@@ -165,9 +169,9 @@
           <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
           <nav class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
-              <li class="nav-item"><a class="nav-link" href="/services.html">Services</a></li>
-              <li class="nav-item"><a class="nav-link" href="/portfolio.html">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link" href="/contacts.html">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="contacts.html">Contact Us</a></li>
             </ul>
             <div class="d-sm-none p-3 mt-n3"></div>
           </nav>
@@ -186,11 +190,11 @@
             </nav>
           <!-- Page title-->
 
-          <h1 class="display-2 mb-4 text-center zt-blue">Our services</h1>
-          <p class="text-center pb-4 mb-2 mb-lg-3 sub-text-services">
+          <h1 class="display-2 mb-4 text-center zt-blue">Нашите Услуги</h1>
+          <p class="text-center pb-4 mb-2 mb-lg-3 fw-500">
             ZT Code Craft is a creative studio specialising in<br>
-            website development and brand establishment,<br>
-            dedicated to help you grow your business.</p>
+            <b class="zt-pink">website development & brand establishment,</b><br>
+            dedicated to help you grow your business</p>
           </div>
         </div>
       </section>
@@ -198,87 +202,68 @@
       <div class="container py-4">
         <!-- Item-->
         <section class="row align-items-center pb-5 py-xl-5 my-2" id="web-development">
-          <div class="col-md-6 offset-xl-1 order-md-2 pb-2 mb-4 mb-md-0"><img class="rounded-5" src="assets/img/services/web-2.png" alt="Image"></div>
+          <div class="col-md-6 offset-xl-1 order-md-2 pb-2 mb-4 mb-md-0"><img class="rounded-5" src="../assets/img/services/web-2.png" alt="Image"></div>
           <div class="col-md-6 col-xl-5 order-md-1">
             <div class="pe-md-4 pe-xl-0 pb-4">
-              <h2 class="h1 pb-2 pb-lg-3 zt-blue">Web Development</h2>
-              <p class="pb-2 pb-lg-0 mb-4 mb-lg-5">
-                Let's create a site that's not just good-looking but also works like a charm, giving your brand the online spotlight it deserves.
-              </p>
+              <h2 class="h1 pb-2 pb-lg-3 zt-blue">Website in Two Weeks</h2>
+                <dl class="pb-2">
+                  <dt>Quick Launch</dt>
+                  <dd>Get your business online fast with a fully functional website in just two weeks.</dd>
+                  <dt>Essential Pages Included</dt>
+                  <dd>Home, About, Contacts, Menu/Schedule, and Map pages tailored to your business needs.</dd>
+                  <dt>No Extra Costs, No Monthly Fees</dt>
+                  <dd>
+                    Everything you need for your website, including hosting (a place for your website to live on the internet) and security (SSL), is covered in one payment. 
+                    Plus, there are no extra charges or monthly fees. It's all taken care of upfront, making it easy and transparent for you.
+                  </dd>
+                </dl>
               <div class="row row-cols-2 mb-4">
-                <div class="col">
-                  <h3 class="h5 mb-2">Is it for me?</h3>
-                  <p class="fs-sm mb-0">Perfect for entrepreneurs and businesses seeking a standout online presence that captivates their audience and drives business growth.</p>
-                  <br>
-                  <h4 class="h5 mb-2">Price: <b class="text-price"> €300 </b></h4>
-                </div>
-                <div class="col">
-                  <h3 class="h5 mb-2">Included</h3>
-                  <p class="fs-sm mb-0"><b>Stunning website design</b>, user-friendly interface, and <b>responsive functionality</b> (functions well on any device—be it a computer, tablet, or phone). 
-                    What's more, enjoy the added benefits of <b>unlimited hosting</b> and a free SSL certificate, guaranteeing secure information exchange. 
-                    Experience fast load times that keep visitors engaged, backed by free technical support from our team to ensure a smooth and hassle-free online experience.
-                </p>
-                </div>
+                <h4 class="h5 mb-2">Price: <b class="text-price"> €300 </b></h4>
+                <a class="btn btn-primary" href="contacts.html">Let's work together</a>
               </div>
-              <a class="btn btn-primary" href="contacts.html">Let's work together</a>
             </div>
           </div>
         </section>
         <!-- Item-->
         <section class="row align-items-center pb-5 py-xl-5 my-2" id="branding">
-          <div class="col-md-6 pb-2 mb-4 mb-md-0"><img class="rounded-5" src="assets/img/services/brand-2.png" alt="Image"></div>
+          <div class="col-md-6 pb-2 mb-4 mb-md-0"><img class="rounded-5" src="../assets/img/services/integrations-2.png" alt="Image"></div>
           <div class="col-md-6 col-xl-5 offset-xl-1">
             <div class="ps-md-4 pe-xl-0">
-              <h2 class="h1 pb-2 pb-lg-3 zt-pink">Brand Establishment</h2>
-              <p class="pb-2 pb-lg-0 mb-4 mb-lg-5">
-                We're not just about logos and colors – we're here to craft an identity that stands out in the digital crowd. 
-                Let's tell your story, build a brand that speaks volumes, and leave a lasting impression on your audience.
-              </p>
-              <div class="row row-cols-2">
-                <div class="col">
-                  <h3 class="h5 mb-2">Is it for me?</h3>
-                  <p class="fs-sm mb-0">Tailored for businesses eager to craft a unique identity that resonates with their audience, leaving a lasting impression in the digital landscape.</p>
-                </div>
-                <div class="col">
-                  <h3 class="h5 mb-2">Included</h3>
-                  <p class="fs-sm mb-0">You get more than just a logo – we provide a comprehensive package that includes brand strategy, 
-                    custom visualizations, and a cohesive narrative, ensuring your brand speaks volumes to your target audience.
-                </p>
-                </div>
-              </div>
+              <h2 class="h1 pb-2 pb-lg-3 zt-pink">Custom Website</h2>
+              <dl class="pb-2">
+                <dt>Tailored to Your Business</dt>
+                <dd>A fully customized website with features and design that match your unique brand identity.</dd>
+                <dt>Dynamic Features</dt>
+                <dd>Incorporate advanced features like <b class="zt-pink">booking systems, card payments, client forms, email integrations, newsletters, donations</b>, and more.</dd>
+                <dt>User-Friendly Content Management System (CMS)</dt>
+                <dd>Manage and update parts of your website content independently.</dd>
+              </dl>
               <a class="btn btn-primary" href="contacts.html">Let's work together</a>
             </div>
           </div>
         </section>
         <!-- Item-->
         <section class="row align-items-center pb-5 py-xl-5 my-2" id="integrations">
-          <div class="col-md-6 offset-xl-1 order-md-2 pb-2 mb-4 mb-md-0"><img class="rounded-5" src="assets/img/services/integrations-2.png" alt="Image"></div>
+          <div class="col-md-6 offset-xl-1 order-md-2 pb-2 mb-4 mb-md-0"><img class="rounded-5" src="../assets/img/services/brand-2.png" alt="Image"></div>
           <div class="col-md-6 col-xl-5 order-md-1">
             <div class="pe-md-4 pe-xl-0">
-              <h2 class="h1 pb-2 pb-lg-3 zt-blue">Website Integrations</h2>
-              <p class="pb-2 pb-lg-0 mb-4 mb-lg-5">
-                Take your website to the next level. From client forms that effortlessly sync with your emails to integrating payment links, donation buttons and content management system, we bring the tech magic to your website. 
-                Let's turn your online space into a dynamic hub! Your dream website, now with superpowers!
-              </p>
-              <div class="row row-cols-2">
-                <div class="col">
-                  <h3 class="h5 mb-2">Is it for me?</h3>
-                  <p class="fs-sm mb-0">If you're looking to supercharge your website functionality, our Website Integrations service is perfect for businesses wanting seamless client interactions.</p>
-                </div>
-                <div class="col">
-                  <h3 class="h5 mb-2">Included</h3>
-                  <p class="fs-sm mb-0">
-                    Some examples of what we can do for you:
-                    <ul>
-                        <li>Contact forms</li>
-                        <li>Email integrations</li>
-                        <li>Dynamic content managed by you</li>
-                        <li>Payment links</li>
-                        <li>Any other dynamic feature</li>
-                    </ul>
-                  </p>
-                </div>
-              </div>
+              <h2 class="h1 pb-2 pb-lg-3 zt-blue">Brand Establishment</h2>
+              <dl class="pb-2">
+                <dt>Branding Guidelines</dt>
+                <dd>Establish clear guidelines for the consistent use of your brand elements.</dd>
+                <dt>Logo Design</dt>
+                <dd>Unique and professional logo that represents your business identity</dd>
+                <dt>Custom Color Palette & Typography Selection</dt>
+                <dd>Personalized color scheme and typography that resonates with your brand.</dd>
+                <dt>Social Media Assets</dt>
+                <dd>Custom graphics and banners for a cohesive social media presence</dd>
+                <dt>Branded Templates</dt>
+                <dd>Templates for documents, presentations, or invoices to maintain a consistent look and feel.</dd>
+                <dt>Competitor Analysis</dt>
+                <dd>Evaluate competitors to position your brand uniquely in the market.</dd>
+                <dt>Ongoing Support</dt>
+                <dd>We provide support and guidance as the brand is established and evolves.</dd>
+              </dl>
               <a class="btn btn-primary" href="contacts.html">Let's work together</a>
             </div>
           </div>
@@ -364,9 +349,9 @@
           <div class="row pt-1 pb-2 py-sm-4">
             <div class="col-md-4 text-center text-md-start">
               <h2 class="h1 zt-blue">Any questions? Check out the FAQ</h2>
-              <p class="pb-3 pb-sm-4 zt-light-blue">Don't find what you are looking for here? Feel free to contact us.</p>
+              <p class="pb-3 pb-sm-4 zt-pink">Don't find what you are looking for here? Feel free to contact us.</p>
               <div class="d-none d-md-flex justify-content-center">
-                <svg class="zt-light-blue ms-n4" width="200" height="211" viewBox="0 0 200 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="zt-pink ms-n4" width="200" height="211" viewBox="0 0 200 211" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z" fill="currentColor"></path>
                 </svg>
               </div>
@@ -461,9 +446,9 @@
           </div>
           <div class="col-sm-3 col-lg-2 offset-xl-1 mb-4 mb-sm-0">
             <ul class="nav flex-column">
-              <li><a class="nav-link py-1 px-0" href="/services.html">Services</a></li>
-              <li><a class="nav-link py-1 px-0" href="/portfolio.html">Portfolio</a></li>
-              <li><a class="nav-link py-1 px-0" href="/privacy-policy.html">Privacy policy</a></li>
+              <li><a class="nav-link py-1 px-0" href="services.html">Services</a></li>
+              <li><a class="nav-link py-1 px-0" href="portfolio.html">Portfolio</a></li>
+              <li><a class="nav-link py-1 px-0" href="privacy-policy.html">Privacy policy</a></li>
             </ul>
           </div>
           <div class="col-sm-4 col-lg-2 mb-4 mb-sm-0">
@@ -485,11 +470,11 @@
         <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
       </svg><i class="ai-arrow-up"></i></a>
     <!-- Vendor scripts: js libraries and plugins-->
-    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
     <!-- Main theme script-->
-    <script src="assets/js/theme.min.js"></script>
+    <script src="../assets/js/theme.min.js"></script>
   </body>
 </html>

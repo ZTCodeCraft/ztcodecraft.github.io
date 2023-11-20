@@ -2845,6 +2845,7 @@ textarea.form-control-lg {
   --ar-btn-disabled-color: #000;
   --ar-btn-disabled-bg: var(--zt-blue);
   --ar-btn-disabled-border-color: var(--zt-blue);
+  max-width: max-content;
 }
 
 .btn-secondary {
@@ -8064,11 +8065,6 @@ textarea.form-control-lg {
   font-size: 1.7rem !important;
   font-weight: 600 !important;
   color: var(--zt-pink);
-}
-
-.sub-text-services {
-  font-weight: 500 !important;
-  color: var(--zt-light-blue);
 }
 
 .text-primary {
