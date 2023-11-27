@@ -12,6 +12,9 @@
   --zt-pink: #e29578;
   --zt-light-bg-rgb : 237, 246, 249;
   --zt-blue-rgb: 0, 109, 119;
+  --zt-font-hero: "Victor Mono", sans-serif;
+  --zt-font-headings: "Exo 2", sans-serif;
+  --zt-font-body: "Manrope", sans-serif;
   --ar-blue: #0d6efd;
   --ar-indigo: #6610f2;
   --ar-purple: #6f42c1;
@@ -113,7 +116,7 @@
 
 body {
   margin: 0;
-  font-family: var(--ar-body-font-family);
+  font-family: var(--zt-font-body);
   font-size: var(--ar-body-font-size);
   font-weight: var(--ar-body-font-weight);
   line-height: var(--ar-body-line-height);
@@ -140,8 +143,17 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   color: var(--ar-gray-900);
 }
 
+.hero-font {
+  font-family: var(--zt-font-hero);
+}
+
+.subheading-font{
+  font-family: var(--zt-font-headings);
+}
+
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
+  font-family: var(--zt-font-headings);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -8170,7 +8182,7 @@ textarea.form-control-lg {
 
 .bg-secondary {
   --ar-bg-opacity: 1;
-  background-color: var(--ar-gray-100) !important;
+  background-color: var(--zt-white) !important;
 }
 
 .bg-success {
@@ -15538,7 +15550,7 @@ hr.dropdown-divider {
 }
 
 .navbar {
-  --ar-navbar-stuck-bg: var(--ar-light);
+  --ar-navbar-stuck-bg: var(--zt-white);
   --ar-navbar-toggler-color: var(--ar-gray-800);
   --ar-navbar-collapse-bg: var(--ar-light);
   --ar-navbar-collapse-border-color: var(--ar-border-color);
