@@ -3630,6 +3630,14 @@ textarea.form-control-lg {
   text-decoration: none;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
+.line-lang {
+  padding-top: var(--ar-nav-link-padding-y);
+}
+@media (min-width: 992px) {
+  .lang-offset {
+      margin-left: 10rem; /* Adjust the value as needed */
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
@@ -14950,6 +14958,10 @@ hr.dropdown-divider {
 }
 .nav-pills .nav-link {
   font-weight: 600;
+}
+
+.offset-lang {
+  margin-left: 10rem;
 }
 
 .navbar-brand {

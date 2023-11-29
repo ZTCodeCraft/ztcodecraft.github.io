@@ -149,32 +149,44 @@
       </div>
     </div>
     <!-- Page wrapper-->
-    <main class="page-wrapper">
+    <main class="page-wrapper bg-secondary">
       <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page-->
-      <header class="navbar navbar-expand-lg fixed-top">
+      <header class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
+          <a href="index.html" class="navbar-brand">
             <span class="text-primary flex-shrink-0 me-2">
               <img src="../assets/img/logo.png" width="150" height="50" >     
             </span>
           </a>
-              
-          <div class="nav-item ms-auto order-lg-2 "><a class="nav-link" href="#">BG | </a></div>
-          <div class="nav-item ms-auto order-lg-3 me-3 ms-sm-2"><a class="nav-link" href="../en/contacts.html"> EN</a></div>
-                    
-          <div class="form-check form-switch mode-switch order-lg-4 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
-            <input class="form-check-input" type="checkbox" id="theme-mode">
-            <label class="form-check-label" for="theme-mode"><i class="ai-sun fs-lg"></i></label>
-            <label class="form-check-label" for="theme-mode"><i class="ai-moon fs-lg"></i></label>
+          <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label for="theme-mode" class="form-check-label">
+              <i class="ai-sun fs-lg"></i>
+            </label>
+            <label for="theme-mode" class="form-check-label">
+              <i class="ai-moon fs-lg"></i>
+            </label>
           </div>
-          <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
-          <nav class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul class="navbar-nav order-lg-3 d-none d-lg-inline-flex">
+            <li class="nav-item">
+              <a href="#" class="nav-link">BG</a>
+            </li>
+            <li class="nav-item separator line-lang d-sm-inline"> | </li>
+            <li class="nav-item">
+              <a href="/en/contacts.html" class="nav-link">EN</a>
+            </li>
+          </ul>
+          <nav class="collapse navbar-collapse" id="navbarCollapse2">
+            <ul class="navbar-nav">
               <li class="nav-item"><a class="nav-link" href="services.html">Услуги</a></li>
-              <li class="nav-item"><a class="nav-link" href="portfolio.html">Наши проекти</a></li>
-              <li class="nav-item"><a class="nav-link" href="contacts.html">Контакти</a></li>
+              <li class="nav-item"><a class="nav-link" href="portfolio.html">Проекти</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
+              <li class="nav-item fs-sm d-lg-none mb-lg-0"><a class="nav-link" href="#">BG</a></li>
+              <li class="nav-item fs-sm d-lg-none mb-lg-0"><a class="nav-link" href="/en/contacts.html">EN</a></li>
             </ul>
-            <div class="d-sm-none p-3 mt-n3"></div>
           </nav>
         </div>
       </header>
