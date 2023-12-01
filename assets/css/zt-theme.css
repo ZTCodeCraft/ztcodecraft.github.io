@@ -8226,6 +8226,10 @@ textarea.form-control-lg {
   background-color: rgba(var(--ar-light-rgb), var(--ar-bg-opacity)) !important;
 }
 
+bg-nav {
+  background-color: var(--zt-white);
+}
+
 .bg-dark {
   --ar-bg-opacity: 1;
   background-color: rgba(var(--ar-dark-rgb), var(--ar-bg-opacity)) !important;
@@ -17701,7 +17705,10 @@ img-comparison-slider:focus {
 .dark-mode .bg-light:not(.badge) {
   background-color: var(--ar-dark) !important;
 }
-.dark-mode .bg-white.badge, .dark-mode .bg-light.badge {
+.dark-mode .bg-nav:not(.badge) {
+  background-color: var(--ar-dark) !important;
+}
+.dark-mode .bg-white.badge, .dark-mode .bg-light.badge, .dark-mode .bg-nav.badge {
   color: #434a57;
 }
 .dark-mode .text-dark-mode-dark {
