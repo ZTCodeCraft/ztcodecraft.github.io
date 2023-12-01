@@ -12,7 +12,7 @@
   --zt-pink: #e29578;
   --zt-light-bg-rgb : 237, 246, 249;
   --zt-blue-rgb: 0, 109, 119;
-  --zt-font-hero: "Victor Mono", sans-serif;
+  --zt-font-hero: "Exo 2", "Istok Web", "Ubuntu Mono", sans-serif;
   --zt-font-headings: "Exo 2", sans-serif;
   --zt-font-body: "Manrope", sans-serif;
   --ar-blue: #0d6efd;
@@ -147,6 +147,10 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-family: var(--zt-font-hero);
 }
 
+.and-font {
+  font-family: "Istok Web", sans-serif;
+}
+
 .subheading-font{
   font-family: var(--zt-font-headings);
 }
@@ -218,6 +222,10 @@ address {
 ol,
 ul {
   padding-left: 2rem;
+}
+
+.pd-left-4 {
+  padding-left: 4rem !important;
 }
 
 ol,
@@ -2846,17 +2854,17 @@ textarea.form-control-lg {
   --ar-btn-color: #000;
   --ar-btn-bg: var(--zt-blue);
   --ar-btn-border-color: var(--zt-blue);
-  --ar-btn-hover-color: #000;
-  --ar-btn-hover-bg: var(--zt-pink) !important;
-  --ar-btn-hover-border-color: #579882;
   --ar-btn-focus-shadow-rgb: 58, 119, 99;
-  --ar-btn-active-color: #000;
-  --ar-btn-active-bg: #69a390;
-  --ar-btn-active-border-color: #579882;
   --ar-btn-active-shadow: unset;
-  --ar-btn-disabled-color: #000;
   --ar-btn-disabled-bg: var(--zt-blue);
   --ar-btn-disabled-border-color: var(--zt-blue);
+
+  --ar-btn-hover-color: #fff;
+  --ar-btn-active-color: #fff;
+  --ar-btn-active-bg: var(--zt-blue);
+  --ar-btn-hover-border-color: var(--zt-pink);
+  --ar-btn-hover-bg: var(--zt-pink);
+  --ar-btn-active-border-color: var(--zt-blue);
   max-width: max-content;
 }
 
@@ -14181,16 +14189,6 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
   font-size: 1.25em;
 }
 
-.btn-primary {
-  --ar-btn-hover-color: #fff;
-  --ar-btn-active-color: #fff;
-  --ar-btn-hover-bg: #37715d;
-  --ar-btn-active-bg: #37715d;
-  --ar-btn-hover-border-color: #37715d;
-  --ar-btn-active-border-color: #37715d;
-  --ar-btn-disabled-color: #fff;
-}
-
 .btn-secondary {
   --ar-btn-hover-color: #fff;
   --ar-btn-active-color: #fff;
@@ -14241,7 +14239,7 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
   --ar-btn-disabled-color: #fff;
 }
 
-.btn-light, .dark-mode .btn-dark:not(.ignore-dark-mode), .card-hover-primary:hover .btn-primary {
+.btn-light, .dark-mode .btn-dark:not(.ignore-dark-mode), .card-hover-primary:hover {
   --ar-btn-hover-color: #fff;
   --ar-btn-active-color: #fff;
   --ar-btn-hover-bg: #ebebeb;
@@ -15566,6 +15564,7 @@ hr.dropdown-divider {
   --ar-navbar-toggler-color: var(--ar-gray-800);
   --ar-navbar-collapse-bg: var(--ar-light);
   --ar-navbar-collapse-border-color: var(--ar-border-color);
+  background-color: var(--zt-white);
   transition: background-color 0.1s ease-in-out;
 }
 .navbar.navbar-stuck {
