@@ -12,6 +12,7 @@
   --zt-pink: #e29578;
   --zt-light-bg-rgb : 237, 246, 249;
   --zt-blue-rgb: 0, 109, 119;
+  --zt-light-pink-rgb: 255, 221, 210;
   --zt-font-hero: "Exo 2", "Istok Web", "Ubuntu Mono", sans-serif;
   --zt-font-headings: "Exo 2", sans-serif;
   --zt-font-body: "Manrope", sans-serif;
@@ -8209,6 +8210,11 @@ textarea.form-control-lg {
 .bg-info {
   --ar-bg-opacity: 1;
   background-color: rgba(var(--ar-info-rgb), var(--ar-bg-opacity)) !important;
+}
+
+.bg-light-pink {
+  --ar-bg-opacity: 1;
+  background-color: rgba(var(--zt-light-pink-rgb), var(--ar-bg-opacity)) !important;
 }
 
 .bg-warning {
@@ -17715,7 +17721,7 @@ img-comparison-slider:focus {
   color: var(--ar-dark) !important;
 }
 .dark-mode .bg-secondary {
-  background-color: var(--ar-secondary-bg) !important;
+  background-color: var(--ar-dark) !important;
 }
 .dark-mode body.bg-secondary {
   background-color: rgba(var(--ar-body-bg-rgb), 0.975) !important;
